@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500&display=swap');
+
+:root {
+    /* CSS HEX */
+    --prussian-blue: #1c3144ff;
+    --mint-green: #d6fff6ff;
+    --turquoise: #4dccbdff;
+    --rose-quartz: #a39ba8ff;
+    --cool-gray: #7d84b2ff;
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: var(--prussian-blue);
+}
+
+a {
+    cursor: pointer;
+}
+
+.navbar-brand  {
+    font-size: 24px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.nav-link {
+    width: 120px;
+    color: white;
+}
+
+.resume-btn {
+    color: var(--turquoise);
+    border-color: var(--turquoise) !important;
+}
+
+.resume-btn:active,
+.resume-btn:hover {
+    color: var(--prussian-blue);
+    background-color: var(--turquoise);
+    transition: all 0.25s ease-in-out;
+}
+/* ham menu */
+.navbar-toggler {
+    width: 55px;
+    height: 55px;
+    border: 2px outset var(--turquoise);
+    position: relative;
+    border-radius: 16%;
+}
+
+nav {
+    background-color: var(--prussian-blue);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.ham {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.center-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: white;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+
+/* end ham menu */
+

@@ -1,0 +1,47 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kristian Colville - Junior Full Stack Software Engineer Website Portfolio">
+    <meta name="keywords" content="kristian colville, software engineer, portfolio website">
+    <meta name="author" content="Kristian Colville">
+
+    <!--Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    {% block extra_css %}{% endblock extra_css %}
+    <title>Kristian Colville</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    {% include 'includes/nav.html' %}
+
+
+    {% block content %}{% endblock content%}
+
+    {% block extra_body %}{% endblock extra_body %}
+    {% comment %} bootstrap bundle {% endcomment %}
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    {% comment %} Custom js scripts {% endcomment %}
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="{% static '/js/base.js' %}"></script>
+    {% comment %} font awesome icons {% endcomment %}
+    <script src="https://kit.fontawesome.com/5ea75181c2.js" crossorigin="anonymous"></script>
+    {% block extra_js %}{% endblock extra_js %}
+    {% block postloadjs %}{% endblock postloadjs%}
+</body>
+
+</html>

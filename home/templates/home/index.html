@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}" type="text/css">
+{% endblock extra_css %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 mt-4">
+            <h1 class="my-name-is fs-4">Hi, my name is</h1>
+            <h2 class="name">Kristian Colville.</h2>
+            <h3 class="home-statement">I build things for the web.</h3>
+
+            <p class="text-light">
+                I'm a junior full stack software engineer specializing in building (and occasionally designing) exceptional digital experiences.
+                Currently, I'm focused on building & maintaining accessible, human-centered products at <a class="text-green text-decoration-none" href="#">AV Star Systems.</a>
+            </p>
+
+            <a href="#" class="btn projects-btn mt-4">Check out my projects!</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
