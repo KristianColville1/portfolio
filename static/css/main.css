@@ -75,6 +75,7 @@ body {
     font-weight: 300;
     background-color: #525252;
     color: #555555;
+    overflow-x: hidden;
 }
 
 /*--------------------------------------------Special Paddings/Margins/Text*/
