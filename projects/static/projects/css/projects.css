@@ -1,0 +1,83 @@
+/*--------------------------------------------GitHub*/
+
+#hackathon-projects,
+#portfolio-projects {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-projects li {
+    padding: 0;
+}
+
+.img-container {
+    width: 280px;
+    height: 240px;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+.pp1,
+.pp2,
+.pp3,
+.pp4,
+.pp5,
+.pp6 {
+    position: relative;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 4px;
+}
+
+.pp1 {
+    background: url('/static/img/raza-noodles.png') no-repeat center center;
+    background-size: cover;
+}
+
+.pp2 {
+    background: url('/static/img/sudoku-master.png') no-repeat center center;
+    background-size: cover;
+}
+
+.pp3 {
+    background: url('/static/img/rapid-silver.png') no-repeat center center;
+    background-size: cover;
+}
+
+.pp4 {
+    background: url('/static/img/daily-sync.png') no-repeat center center;
+    background-size: cover;
+}
+
+.pp5 {
+    background: url('/static/img/in-progress.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.pp6 {
+    background: url('/static/img/jan-hackathon.png') no-repeat center center;
+    background-size: cover;
+}
+
+section .documentation ul {
+    list-style-type: none;
+}
+
+section .documentation ul li {
+    height: 40px;
+}
+
+section .documentation ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+section .documentation ul li a:hover {
+    font-size: 110%;
+    font-weight: 500;
+    color: var(--dark-purple);
+    transition: all 0.2s ease-in-out;
+}

@@ -5,20 +5,157 @@
 <link rel="stylesheet" href="{% static 'home/css/home.css' %}" type="text/css">
 {% endblock extra_css %}
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 mt-4">
-            <h1 class="my-name-is fs-4">Hi, my name is</h1>
-            <h2 class="name">Kristian Colville.</h2>
-            <h3 class="home-statement">I build things for the web.</h3>
-
-            <p class="text-light">
-                I'm a junior full stack software engineer specializing in building (and occasionally designing) exceptional digital experiences.
-                Currently, I'm focused on building & maintaining accessible, human-centered products at <a class="text-green text-decoration-none" href="#">AV Star Systems.</a>
-            </p>
-
-            <a href="#" class="btn projects-btn mt-4">Check out my projects!</a>
+    <section class="container-fluid g-0">
+        <div class="row">
+            <div class="col-md-4 bg-color-personal-info section-column overflow-hidden">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Personal Info
+                        </h3>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Name:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Kristian Colville
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Location:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Ireland <i class="fa-solid fa-earth-europe"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Phone:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            <a href="tel://+353833937493/">+353 83 393 7493</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Email:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            <a href="mailto:kristiancolville96@gmail.com/">kristiancolville96@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">About Me</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-2 d-none d-md-block">
+                                <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-sm-12 col-md-10 mb-3">
+                                <h4 class="interest-heading uppercase d-none d-md-block">What do I do?</h4>
+                                <h4 class="interest-heading uppercase d-sm-block d-md-none">
+                                    <div class="text-center">
+                                        <div>
+                                            <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
+                                        </div>
+                                        What do I do?
+                                    </div>
+                                </h4>
+                                <hr>
+                                <p class="text-justify">
+                                    I'm a skilled Junior Full Stack Software Developer with a wealth of diverse life and
+                                    technical experience that I bring to every project. I work well under pressure and
+                                    have a proven track record of excellent project management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-2 d-none d-md-block">
+                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-sm-12 col-md-10 mb-3">
+                                <h4 class="interest-heading uppercase d-none d-md-block">How do I do it?</h4>
+                                <h4 class="interest-heading uppercase d-sm-block d-md-none">
+                                    <div class="text-center">
+                                        <div>
+                                            <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
+                                        </div>
+                                        How do I do it?
+                                    </div>
+                                </h4>
+                                <hr>
+                                <p class="text-justify">
+                                    I follow form as well as function. I know that the aesthetics of effective design
+                                    combined with application speed, security and reliability combine to create a great
+                                    user experience.
+                                </p>
+                                <p class="text-justify">
+                                    I have been coding almost every day for the past year using the latest tools and
+                                    tech. I'm emersed in the tech culture and I keep up to date with my software
+                                    communities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-2 d-none d-md-block">
+                                <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-sm-12 col-md-10 mb-3">
+                                <h4 class="interest-heading uppercase d-none d-md-block">Why hire me?</h4>
+                                <h4 class="interest-heading uppercase d-sm-block d-md-none">
+                                    <div class="text-center">
+                                        <div>
+                                            <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
+                                        </div>
+                                        Why hire me?
+                                    </div>
+                                </h4>
+                                <hr>
+                                <p class="text-justify">
+                                    I work quickly and effectively in getting things built and working across the stack.
+                                    I'm an excellent communicator who thrives in bright and enthusiastic teams and I'm
+                                    also a self starter when working solo.
+                                </p>
+                                <p class="text-justify">
+                                    I'm not afraid to reach out when problems occur because I know that teamwork is
+                                    essential. I'm aware of the bigger picture. I am a true tech savvy individual with
+                                    great problem solving abilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+
+    </section>
 {% endblock content %}
