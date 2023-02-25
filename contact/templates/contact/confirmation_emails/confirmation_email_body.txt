@@ -1,0 +1,11 @@
+Hi {{form.name}},
+
+I got your message:
+
+{{form.comment}}
+
+Please do not reply to this email. I will be in contact about the above soon.
+
+Kind regards,
+
+Kristian Colville
