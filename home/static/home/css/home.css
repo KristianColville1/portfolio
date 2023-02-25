@@ -2,11 +2,6 @@
     color: var(--turquoise);
 }
 
-.name {
-    font-size: 90px;
-    color: white;
-}
-
 .home-statement {
     font-size: 100px;
     color: var(--mint-green);
