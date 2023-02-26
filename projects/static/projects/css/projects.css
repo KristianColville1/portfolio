@@ -12,12 +12,11 @@
 }
 
 .img-container {
-    width: 280px;
-    height: 240px;
+    width: 350px;
+    height: 300px;
     text-align: center;
     padding: 0px;
     position: relative;
-    cursor: pointer;
 }
 
 .pp1,
@@ -27,9 +26,6 @@
 .pp5,
 .pp6 {
     position: relative;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-radius: 4px;
 }
 
 .pp1 {
@@ -53,7 +49,7 @@
 }
 
 .pp5 {
-    background: url('/static/img/in-progress.jpg') no-repeat center center;
+    background: url('/static/img/fine-chop.png') no-repeat center center;
     background-size: cover;
 }
 
